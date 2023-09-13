@@ -11,9 +11,11 @@
 
         <!--menu section start-->
 
-        <div>
+
+        <div> <!-- this tag should be <header></header> -->
             <nav>
                 <ul>
+                    <!-- never put empty source on logo. put stock photos from internet instead -->
                     <li><a href="#"><img src="" alt="logo"></a></li>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT ME</a></li>
@@ -24,6 +26,7 @@
                     <li><a href="#">PORTFOLIO</a></li>
                     <li><a href="#">REVIEWS</a></li>
                     <li><a href="#">CONTACT</a></li>
+                    <!-- dont use button inside a tag. add class to a tag <a href="#" class="btn"> -->
                     <li><a href="#"><button class="btn">DOWNLOAD CV</button></a></li>
                 </ul>
             </nav>
@@ -42,6 +45,7 @@
                 I am currently working on REACT.JS. However, I am very handy and capable at Wordpress and HTML as well.
                 I would love to talk with you about your unique project in details.
             </p>
+            <!-- these links are usually a tags. button is only used when you need to trigger javascript function / action on a page. -->
             <button class="btn">Contact Me</button>
             <button class="btn">Contact Me</button>
         </div>
@@ -52,6 +56,7 @@
 
         <!--about section start-->
 
+        <!-- Never use full uppercase on classes. learn css class cases (like camelCase, hyphene-case, snake_case etc). Also a section should be identified with ID instead of class. ID can use capital first letter with camelCase. Example: <div id="AboutSection">  -->
         <div class="ABOUT">
             <h2>About</h2>
             <h4>my story</h4>
@@ -81,7 +86,6 @@
                     <h5>Available</h5>
                     <h5>Available</h5>
                 </div>
-    
             </div>
         </div>
         </div>
@@ -195,6 +199,7 @@
 
         <!--skill section start-->
 
+        <!-- if you put space between a class it becomes two class. both coding and skills are a class selector now. But you cannot put multiple id on an element. -->
         <div class="CODING SKILLS">
             <h2>Coding Skills</h2>
             <h4>developing on</h4>
