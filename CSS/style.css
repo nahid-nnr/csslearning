@@ -1,7 +1,10 @@
 .container {
-/*     Use #000000 hex code instead of black */
+/* Note: Use #000000 hex code instead of black */
     background-color: black;
     margin: auto;
+/* Note: use rem values for padding. 1rem = 16px. so do the calculation and put the rem value. for example 50px = 3.125rem */
+/* Note: Also you can combile padding values. padding: topValue rightValue bottomValue leftValue; */
+/* Note: https://developer.mozilla.org/en-US/docs/Web/CSS/padding */
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 32px;
