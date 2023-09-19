@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
-    <!--<link rel="stylesheet" href="CSS/style.css">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body>
     <div class="container">
 
         <!--menu section start-->
 
-
-        <div> <!-- this tag should be <header></header> -->
-            <nav>
+    <header>
+            <a href="#" class="logo"><img src="../Work to do/LOGO.png" alt="logo"></a>
+            <nav class="nav">
                 <ul>
-                    <!-- never put empty source on logo. put stock photos from internet instead -->
-                    <li><a href="#"><img src="" alt="logo"></a></li>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT ME</a></li>
                     <li><a href="#">SERVICES</a></li>
@@ -26,28 +30,29 @@
                     <li><a href="#">PORTFOLIO</a></li>
                     <li><a href="#">REVIEWS</a></li>
                     <li><a href="#">CONTACT</a></li>
-                    <!-- dont use button inside a tag. add class to a tag <a href="#" class="btn"> -->
-                    <li><a href="#"><button class="btn">DOWNLOAD CV</button></a></li>
+                    <li><a href="#" class="btn btn-primary">DOWNLOAD CV</a></li>
                 </ul>
             </nav>
-        </div>
-
+    </header>
         <!--menu section end-->
 
 
 
         <!--home section start-->
 
-        <div class="home">
-            <h1 class="h1">Xian<br>Malik</h1>
+        <div class="home section-style" id="home">
+            <h1 class="h1">
+                <span class="grad-bg">Xian<br>Malik</span>
+            </h1>
             <h4 class="h4">WEB DEVELOPER & PROGRAMER</h4>
             <p class="content">Hello there! I am a Web Developer from Dhaka,Bangladesh. I have rich experience in website & webapps development.
                 I am currently working on REACT.JS. However, I am very handy and capable at Wordpress and HTML as well.
                 I would love to talk with you about your unique project in details.
             </p>
-            <!-- these links are usually a tags. button is only used when you need to trigger javascript function / action on a page. -->
-            <button class="btn">Contact Me</button>
-            <button class="btn">Contact Me</button>
+            <div>
+                <a href="#" class="btn btn-secondary">Contact Me</a>
+                <a href="#" class="btn btn-secondary">Contact Me</a>
+            </div>
         </div>
 
         <!--home section end-->
@@ -56,9 +61,13 @@
 
         <!--about section start-->
 
-        <!-- Never use full uppercase on classes. learn css class cases (like camelCase, hyphene-case, snake_case etc). Also a section should be identified with ID instead of class. ID can use capital first letter with camelCase. Example: <div id="AboutSection">  -->
-        <div class="ABOUT">
-            <h2>About</h2>
+        
+        <div class="about section-style" id="about">
+            <h2>
+                <span class="grad-bg">
+                    About
+                </span>
+            </h2>
             <h4>my story</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium facere quam ducimus eaque rem. Exercitationem iste esse numquam saepe obcaecati. Repellat sit natus sequi, itaque placeat dolorem dolorum dolore odit.</p>
         <div class="row">
@@ -96,8 +105,10 @@
 
         <!--service section start-->
 
-        <div class="SERVICES">
-            <h2>Services</h2>
+        <div class="service section-style" id="service">
+            <h2>
+                <span class="grad-bg">Services</span>
+            </h2>
             <h4>things i do</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odio.</p>
             <div class="row">
@@ -123,8 +134,10 @@
 
         <!--education section start-->
 
-        <div class="EDUCATION">
-            <h2>Education</h2>
+        <div class="education section-style" id="education">
+            <h2>
+                <span class="grad-bg">Education</span>
+            </h2>
             <h4>studied</h4>
             <div class="row">
                 <div class="column">
@@ -161,8 +174,10 @@
 
         <!--experience section start-->
 
-        <div class="EXPERIENCE">
-            <h2>Experience</h2>
+        <div class="experience section-style" id="experience">
+            <h2>
+                <span class="grad-bg">Experience</span>
+            </h2>
             <h4>worked at</h4>
             <div class="row">
                 <div class="column">
@@ -199,9 +214,11 @@
 
         <!--skill section start-->
 
-        <!-- if you put space between a class it becomes two class. both coding and skills are a class selector now. But you cannot put multiple id on an element. -->
-        <div class="CODING SKILLS">
-            <h2>Coding Skills</h2>
+        
+        <div class="skill section-style" id="skill">
+            <h2>
+                <span class="grad-bg">Coding Skills</span>
+            </h2>
             <h4>developing on</h4>
             <div class="row">
                 <div class="column"><h5>react JS</h5></div>
@@ -217,20 +234,24 @@
 
         <!-- portfolio section start-->
 
-        <div class="PORTFOLIO">
-            <h2>Portfolio</h2>
+        <div class="portfolio section-style" id="portfolio">
+            <h2>
+                <span class="grad-bg">Portfolio</span>
+            </h2>
             <h4>projects i worked on</h4>
             <div class="list">
+                <ul>
                 <li><a href="#">All</a></li>
                 <li><a href="#">React JS</a></li>
                 <li><a href="#">Wordpress</a></li>
                 <li><a href="#">shopify</a></li>
                 <li><a href="#">html</a></li>
                 <li><a href="#">CSS</a></li>
+                </ul>
             </div>
             <div class="row">
                 <div class="column">
-                    <img src="" alt="">
+                    <img src="#" alt="logo">
                     <h5>yo yo honey singh</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, quibusdam?</p>                </div>
                 <div class="column">
@@ -241,12 +262,12 @@
             </div>
             <div class="row">
                 <div class="column">
-                    <img src="" alt="">
+                    <img src="#" alt="logo">
                     <h5>yo yo honey singh</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, quibusdam?</p>
                 </div>
                 <div class="column">
-                    <img src="" alt="">
+                    <img src="#" alt="logo">
                     <h5>yo yo honey singh</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, quibusdam?</p>
                 </div>
@@ -258,16 +279,18 @@
 
 
 
-        <!--review section start-->
+        <!--reviews section start-->
 
-        <div class="REVIEWS">
-            <h2>Reviews</h2>
+        <div class="reviews section-style" id="reviews">
+            <h2>
+                <span class="grad-bg">Reviews</span>
+            </h2>
             <h4>customers opinion</h4>
             <div class="row1">
                 <div class="column1">
                     <div class="row2">
                         <div class="column2">
-                            <img src="" alt="">
+                            <img src="#" alt="logo">
                         </div>
                         <div class="column2">
                             <h3>Sanwar Satchcha</h3>
@@ -279,7 +302,7 @@
                 <div class="column1">
                     <div class="row2">
                         <div class="column2">
-                            <img src="" alt="">
+                            <img src="#" alt="logo">
                         </div>
                         <div class="column2">
                             <h3>Sanwar Satchcha</h3>

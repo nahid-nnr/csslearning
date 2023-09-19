@@ -1,38 +1,125 @@
-.container {
-/* Note: Use #000000 hex code instead of black */
-    background-color: black;
-    margin: auto;
-/* Note: use rem values for padding. 1rem = 16px. so do the calculation and put the rem value. for example 50px = 3.125rem */
-/* Note: Also you can combile padding values. padding: topValue rightValue bottomValue leftValue; */
-/* Note: https://developer.mozilla.org/en-US/docs/Web/CSS/padding */
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-h1{
-    color: white;
-    font-size: 100px;
-    margin-top: 0;
-}
-h4{
-    color: white;
-    font-size: 35px;
-}
-p{
-    color: white;
-    font-size: 18px;
-}
-.button{
-    border-radius: 15px;
-    font-size: 20px;
-    background-color: black;
-    border-color: white;
-    color: white;
-    padding: 4px;
-}
-.button:hover{
-    background-color: white;
+:root {
+    --primary-gradient: linear-gradient(45deg,#b2d9ff,#e2d9ff,#b2ffe5);
 
-    color: black;
 }
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: var(--primary-gradient);
+}
+
+header {
+    background-color: #41474d;
+    padding: 0px 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    margin: 16px;
+}
+
+.logo {
+    padding: 1px 35px;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    column-gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 6px;
+}
+
+.nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+}
+ 
+a {
+    color: #b2ffe5;
+}
+
+/* button styles */
+
+.btn {
+    display: inline-block;
+    border-radius: 48px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-weight: 900;
+}
+
+.btn.btn-primary {
+    color: #41474d;
+    background-image: var(--primary-gradient);
+    padding: 20px 15px;
+
+}
+
+.btn.btn-secondary {
+    border: 1px solid #b2ffe6;
+    padding: 20px 30px;
+    text-transform: uppercase;
+}
+
+.btn.btn-secondary:not(:last-child) {
+    margin-right: 20px;
+}
+
+.btn.btn-secondary:hover {
+    background-image: var(--primary-gradient);
+    color: #41474d;
+    
+}
+
+.home .content {
+    margin-bottom: 50px;
+}
+
+.section-style {
+    background-color: #212326;
+    padding: 28px 28px;
+    padding-left: 52px;
+    margin-left: 40%;
+    border-bottom: 1px solid #41474d;
+    border-right: 1px solid #ffff;
+}
+
+
+
+h1{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    line-height: 1em;
+}
+
+h4{
+    margin-top: 0;
+    color: #b2ffe6;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+.grad-bg {
+    background-image: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    font-size: 4.5rem;
+}
+
+p{
+    color: #6c7680;
+    font-size: 0.875rem;
+}
+
